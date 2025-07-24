@@ -103,7 +103,7 @@ const Portfolio = () => {
             <h1 className="text-6xl font-bold text-white mb-4 tracking-wide">
               {personalInfo.name}
             </h1>
-            <p className="text-2xl text-white/90 mb-2">개발자의 마법같은 여정</p>
+            <p className="text-2xl text-white/90 mb-2">29살 청년의 여정</p>
             <p className="text-lg text-white/80 italic">"{personalInfo.motto}"</p>
           </div>
           
