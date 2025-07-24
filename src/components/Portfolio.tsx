@@ -19,7 +19,7 @@ const Portfolio = () => {
   const [activeStory, setActiveStory] = useState(0);
 
   const personalInfo = {
-    name: "서희재",
+    // name: "서희재",
     birth: "1997년 2월 19일",
     zodiac: "소띠",
     gender: "남자",
@@ -27,49 +27,49 @@ const Portfolio = () => {
     mbti: "ENFJ",
     drink: "2.5병 (컨디션 좋으면 3병까지)",
     motto: "놀 땐 놀고 할 땐 하자",
-    relationship: "무"
+    relationship: "무 (해본 적은 있음)"
   };
 
   const timeline = [
     {
-      period: "중학교 시절",
-      title: "울산 북구의 수재",
-      description: "울산 북구에서 쭉 살다가 수재라는 소리를 들으며 중학교에서 공부로 입지가 있었음",
+      period: "중학생 서희재",
+      title: "산뜻한 시작: 잘 놀고 잘 공부했습니다",
+      description: "울산 북구의 수재로써 남학생 전교 1등으로 졸업을 하였습니다",
       icon: "🎓",
       color: "from-blue-400 to-purple-500"
     },
     {
-      period: "고등학교",
-      title: "소림축구의 감명",
-      description: "소림축구에 감명을 받아 울산 외국어 고등학교 중국어과에 입학. 하지만 외국어에 소질이 없어 수능을 아랍어로 보게 되었고, 공대로 진로를 변경",
+      period: "고등학생 서희재",
+      title: "불안한 성장: 돌이킬 수 없는 선택",
+      description: "영화 소림축구에 감명을 받아 울산 외국어 고등학교 중국어과에 입학. 하지만 여러 역경속에 수능을 아랍어로 보게 되는 결말을 맞이하며, 문과와 이별하며 공대로 진학하였습니다.",
       icon: "🥋",
       color: "from-orange-400 to-red-500"
     },
     {
-      period: "대학 시절",
-      title: "학업과 학생회 활동",
-      description: "열심히 학생회도 하고 학업생활을 하며 성장하는 시기",
+      period: "대학생 서희재",
+      title: "화려한 인생: 잘 놀았습니다",
+      description: "학생회를 시작으로 다양한 사람을 만나며, 잘 노는 법을 배웠습니다.",
       icon: "📚",
       color: "from-green-400 to-blue-500"
     },
     {
-      period: "군대",
-      title: "8사단 오뚜기 부대",
-      description: "대명문 8사단 오뚜기 부대 수색대에 입대. 격투기 선수 맞선임을 맞이하게 되어 겸손함을 많이 배우게 되는 계기가 됨",
+      period: "수색용사 서희재",
+      title: "무거운 성찰: 세상엔 다양한 사람이 있다",
+      description: "대명문 8사단 오뚜기 부대 수색대에 입대. 격투기 선수 맞선임을 맞이하게 되어 겸손함을 많이 배우게 되는 계기가 되었습니다.",
       icon: "🎖️",
       color: "from-gray-600 to-gray-800"
     },
     {
-      period: "서울 생활",
-      title: "개발자의 꿈",
-      description: "남자는 죽기전에 상경을 해서 꿈을 꾸어보아야 한다는 야심찬 목표로 서울 SI 회사에 취업. 2년동안 웹, 앱 가리지 않고 열심히 살았음",
+      period: "사회 초년생 서희재",
+      title: "상경: 개발자의 꿈",
+      description: "남자는 죽기전에 상경을 해서 꿈을 꾸어보아야 한다는 야심찬 목표로 서울 SI 회사에 취업. 2년동안 웹, 앱 가리지 않고 했습니다. 아침에 퇴근을 하게 되는 미라클 모닝을 경험하였습니다.",
       icon: "💻",
       color: "from-purple-400 to-pink-500"
     },
     {
-      period: "현재",
-      title: "울산대학교병원",
-      description: "울산대학교병원에서 좋은 서비스를 만들기 위해 열심히 노력하며 새로운 시작",
+      period: "29살 청년 서희재",
+      title: "새로운 시작: 제2의 시작",
+      description: "울산대학교병원에서 좋은 서비스를 만들기 위해 열심히 노력하겠습니다.",
       icon: "🏥",
       color: "from-teal-400 to-blue-500"
     }
@@ -98,16 +98,16 @@ const Portfolio = () => {
         <div className="text-center z-10 bounce-in">
           <div className="mb-8">
             <div className="w-32 h-32 mx-auto mb-6 bg-white/20 backdrop-blur-md rounded-full flex items-center justify-center text-6xl border-4 border-white/30 magical-glow">
-              🐂
+              <img src="/profile.png" alt="png" className="w-full h-full object-cover rounded-full" />
             </div>
             <h1 className="text-6xl font-bold text-white mb-4 tracking-wide">
-              {personalInfo.name}
+              서희재
             </h1>
-            <p className="text-2xl text-white/90 mb-2">29살 청년의 여정</p>
-            <p className="text-lg text-white/80 italic">"{personalInfo.motto}"</p>
+            <p className="text-2xl text-white/90 mb-4">저의 이야기를 들려드리겠습니다</p>
+            <p className="text-lg text-white/80 italic">"바쁜 시간 내어 주셔서 감사합니다"</p>
           </div>
           
-          <div className="flex gap-4 justify-center">
+          {/* <div className="flex gap-4 justify-center">
             <Button 
               variant="soft" 
               size="lg"
@@ -124,7 +124,7 @@ const Portfolio = () => {
               <Star className="mr-2" />
               여정 따라가기
             </Button>
-          </div>
+          </div> */}
         </div>
       </section>
 
@@ -132,7 +132,7 @@ const Portfolio = () => {
       <section id="about" className="py-20 px-4">
         <div className="max-w-6xl mx-auto">
           <h2 className="text-4xl font-bold text-center mb-16 gradient-text">
-            ✨ 나에 대한 이야기 ✨
+            ✨ About Me ✨
           </h2>
           
           <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
@@ -173,7 +173,7 @@ const Portfolio = () => {
       <section id="journey" className="py-20 px-4 bg-gradient-to-b from-purple-50 to-pink-50">
         <div className="max-w-4xl mx-auto">
           <h2 className="text-4xl font-bold text-center mb-16 gradient-text">
-            🌟 인생의 마법같은 여정 🌟
+            🌟 My Story 🌟
           </h2>
           
           <div className="space-y-8">
@@ -211,10 +211,10 @@ const Portfolio = () => {
       <section className="py-20 px-4">
         <div className="max-w-4xl mx-auto">
           <h2 className="text-4xl font-bold text-center mb-16 gradient-text">
-            💪 나의 마법 능력들 💪
+            💪 Experience 💪
           </h2>
           
-          <div className="grid md:grid-cols-2 gap-8 mb-12">
+          {/* <div className="grid md:grid-cols-2 gap-8 mb-12">
             {skills.map((skill, index) => (
               <div key={skill.name} className="story-card p-6 fade-up" style={{animationDelay: `${index * 0.1}s`}}>
                 <div className="flex justify-between items-center mb-3">
@@ -229,23 +229,51 @@ const Portfolio = () => {
                 </div>
               </div>
             ))}
-          </div>
+          </div> */}
 
           {/* Experience Highlight */}
           <Card className="story-card p-8">
             <div className="text-center">
               <Code className="w-16 h-16 mx-auto mb-4 text-primary" />
               <h3 className="text-2xl font-bold mb-4 gradient-text">주요 프로젝트 경험</h3>
-              <div className="bg-gradient-to-r from-blue-50 to-purple-50 rounded-2xl p-6">
+              <div className="story-card mb-4 bg-gradient-to-r from-green-100 to-red-100 rounded-2xl p-6">
                 <h4 className="text-xl font-semibold mb-3 text-primary">스마트스코어 골프 앱</h4>
                 <p className="text-muted-foreground mb-4">
-                  커뮤니티 파트를 데이터 설계부터 개발까지 완전히 담당하여 성공적으로 론칭한 프로젝트
+                  커뮤니티 파트 데이터 설계, 개발 
                 </p>
                 <div className="flex flex-wrap gap-2 justify-center">
-                  <Badge variant="secondary">데이터 설계</Badge>
-                  <Badge variant="secondary">풀스택 개발</Badge>
-                  <Badge variant="secondary">커뮤니티 시스템</Badge>
-                  <Badge variant="secondary">골프 앱</Badge>
+                  <Badge variant="secondary">VueJS</Badge>
+                  <Badge variant="secondary">JPA / QueryDSL</Badge>
+                </div>
+              </div>
+              <div className="story-card mb-4 bg-gradient-to-r from-green-100 to-red-100 rounded-2xl p-6">
+                <h4 className="text-xl font-semibold mb-3 text-primary">SK dnd 부동산 임대 앱</h4>
+                <p className="text-muted-foreground mb-4">
+                  계약 파트 데이터 설계, 개발 
+                </p>
+                <div className="flex flex-wrap gap-2 justify-center">
+                  <Badge variant="secondary">Flutter</Badge>
+                  <Badge variant="secondary">JPA / QueryDSL</Badge>
+                </div>
+              </div>
+              <div className="story-card mb-4 bg-gradient-to-r from-green-100 to-red-100 rounded-2xl p-6">
+                <h4 className="text-xl font-semibold mb-3 text-primary">ESG 솔루션 개발</h4>
+                <p className="text-muted-foreground mb-4">
+                  ESG 데이터 조회 및 수정 파트 개발
+                </p>
+                <div className="flex flex-wrap gap-2 justify-center">
+                  <Badge variant="secondary">VueJS</Badge>
+                  <Badge variant="secondary">JPA / QueryDSL</Badge>
+                </div>
+              </div>
+              <div className="story-card mb-4 bg-gradient-to-r from-green-100 to-red-100 rounded-2xl p-6">
+                <h4 className="text-xl font-semibold mb-3 text-primary">사내 메신저 앱</h4>
+                <p className="text-muted-foreground mb-4">
+                  회원 관리 파트 개발
+                </p>
+                <div className="flex flex-wrap gap-2 justify-center">
+                  <Badge variant="secondary">Flutter</Badge>
+                  <Badge variant="secondary">JPA / QueryDSL</Badge>
                 </div>
               </div>
             </div>
@@ -256,35 +284,45 @@ const Portfolio = () => {
       {/* Contact & Future */}
       <section className="py-20 px-4 bg-hero">
         <div className="max-w-4xl mx-auto text-center">
-          <h2 className="text-4xl font-bold mb-8 text-white">
-            🚀 새로운 시작, 울산대학교병원 🚀
+          <h2 className="text-4xl font-bold mb-4 text-white">
+            🚀 개발자로써의 목표 🚀
           </h2>
+          <p className="mb-4 text-lg text-white/80 italic">"1개의 how보다 ㆀ개의 why"</p>
           <div className="story-card p-8 max-w-2xl mx-auto">
-            <div className="flex items-center justify-center mb-6">
+            {/* <div className="flex items-center justify-center mb-6">
               <div className="bg-gradient-to-r from-teal-400 to-blue-500 rounded-full p-4">
                 <Briefcase className="w-8 h-8 text-white" />
               </div>
-            </div>
+            </div> */}
+            <p className="text-xl font-semibold text-primary mb-4">
+              좋은 개발자란?
+            </p>
             <p className="text-lg text-muted-foreground mb-6 leading-relaxed">
-              3년의 서울 생활을 마무리하고, 이제 울산대학교병원에서 
-              환자들과 의료진들을 위한 더 좋은 서비스를 만들기 위해 
-              열심히 노력하겠습니다.
+              Error가 없는 프로그램을 만드는 개발자
             </p>
-            <p className="text-xl font-semibold text-primary mb-8">
-              앞으로 잘 부탁드리겠습니다! ✨
+            <p className="text-xl font-semibold text-primary mb-4">
+              BUT
             </p>
-            
-            <div className="flex gap-4 justify-center">
-              <Button variant="magical" size="lg">
-                <Heart className="mr-2" />
-                함께 성장해요
-              </Button>
-              <Button variant="soft" size="lg">
-                <Coffee className="mr-2" />
-                커피 한 잔 하실래요?
-              </Button>
-            </div>
+            <p className="text-lg text-muted-foreground mb-6 leading-relaxed">
+              역설적으로 Error를 많이 경험하여 성장한 개발자
+            </p>
+            <Card className="story-card p-8">
+              <p className="text-muted-foreground mb-1">
+                하나의 (How) 잘되는 방법을 사고하기 위해 다양한 (Why) 질문들을 던져
+              </p>
+              <p className="text-muted-foreground"> 
+                의미있는 성장을 하여 울산대학교병원 IT팀에 보탬이 되겠습니다!!!
+              </p>
+            </Card>
           </div>
+        </div>
+      </section>
+
+      <section id="journey" className="py-20 px-4 bg-gradient-to-b from-purple-50 to-pink-50">
+        <div className="max-w-4xl mx-auto text-center">
+          <h1 className="text-4xl font-bold mb-4 text-primary">
+            ✨✨✨ 들어주셔서 감사합니다 ✨✨✨
+          </h1>
         </div>
       </section>
     </div>
